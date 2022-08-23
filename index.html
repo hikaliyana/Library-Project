@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>MY AWESOME LIBRARY</h1>
+  </header>
+
+  <button id="addbtn" class="addbtn">Add A New Book</button>
+
+  <div class="formpage hide" id="formpage">
+    <div id="addform" class="addform">
+      <label for="addtitle">Book Title:</label>
+      <input type="text" id="addtitle">
+      <label for="addauthor">Author:</label><input type="text" id="addauthor">
+      <label for="addpages">Pages:</label><input type="number" id="addpages">
+      <div class="add_readstatus">
+        <label for="addifread">I've read: </label><input type="checkbox" id="addifread">
+      </div>
+      <button type="submit" id="submitbtn" class="formbtn">Submit</button>
+      <button id="closeformbtn" class="formbtn">Cancel</button>
+    </div>
+  </div>
+
+
+  <div id="books" class="books-table"></div>
+
+  <script src="./scripts.js"></script>
+</body>
+
+</html>

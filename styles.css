@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  padding: 10vh 10vw;
+background: linear-gradient(to right, #FFE47A, #3D7EAA);
+color: rgba(41, 39, 37, 0.731);
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  display: block;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+header h1 {
+  color: rgb(41, 100, 152);
+  font-size: 3rem;
+  text-shadow: 0 2px 5px #7e7c72d8;
+}
+
+.addbtn {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background: transparent;
+  color: rgb(41, 100, 152);
+  box-shadow: 0 0 5px #10354d;
+  border: none;
+}
+
+.addbtn:hover {
+  color: #3D7EAA;
+  box-shadow: 0 0 8px #10354d;;
+}
+
+.formpage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #10354d69;
+  z-index: 99;
+}
+
+.hide {
+  display: none;
+}
+
+.addform {
+  padding: 2rem;
+  background:  #10354ddc;
+  width: 20rem;
+  height: 25rem;
+  font-size: 1.5rem;
+  color: aliceblue;
+  display: block;
+  margin: 12rem auto;
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.addform input {
+  padding-top: 0.2rem;
+  font-size: 1.3rem;
+}
+
+.addform input:focus {
+  outline: none
+}
+
+.addform .add_readstatus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addform .formbtn {
+  font-size: 1.1rem;
+  color: rgb(41, 39, 37);
+  padding: 0.2rem;
+}
+
+
+.books-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookcard {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin: 30px;
+  position: relative;
+}
+
+.bookchange {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+
+.bookchange button {
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 10px;
+  color: #3d7eaa;
+  box-shadow: 0 0 5px #10354d;
+  border: none;
+  background:  #b1c7d4dc;
+  width: 8rem;
+  height:3rem;
+}
+
+.bookchange .yesread {
+  background-color: #10354d;
+  color: #b1c7d4dc;
+}
